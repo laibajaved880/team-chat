@@ -1,0 +1,23 @@
+*{box-sizing:border-box}body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;margin:0;background:#0b1020;color:#e9ecf1}
+.card{max-width:520px;margin:10vh auto;background:#121837;border:1px solid #253056;border-radius:18px;padding:24px;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+h1{margin:0 0 8px}h2{margin:0}
+.muted{opacity:.7}
+.row{margin:12px 0}
+label{display:block;margin-bottom:6px;opacity:.9}
+input,select,button{width:100%;padding:12px 14px;border-radius:12px;border:1px solid #2a355f;background:#0e1530;color:#e9ecf1}
+button{cursor:pointer;font-weight:600}
+button:hover{filter:brightness(1.05)}
+.hidden{display:none}
+
+#chat-view{max-width:900px;margin:4vh auto;display:flex;flex-direction:column;gap:12px;padding:0 12px}
+.chat-header{display:flex;align-items:center;justify-content:space-between;background:#121837;border:1px solid #253056;border-radius:18px;padding:16px}
+.typing{height:18px;margin-top:4px}
+.presence{font-size:14px;opacity:.85}
+
+main#messages{background:#0e1530;border:1px solid #253056;border-radius:18px;padding:12px;height:60vh;overflow:auto}
+.message{padding:8px 10px;margin:6px 0;background:#131b3d;border:1px solid #273160;border-radius:14px}
+.message .meta{font-size:12px;opacity:.8;margin-bottom:4px}
+.message .body{font-size:15px;line-height:1.35}
+.sys{font-size:13px;opacity:.7;margin:8px 0;text-align:center}
+.composer{display:flex;gap:8px}
+.composer input{flex:1}

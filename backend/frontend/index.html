@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Team Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="login-card" class="card">
+    <h1>Team Chat</h1>
+    <p class="muted">Mini real-time chat (General / Developers / HR)</p>
+    <div class="row">
+      <label>Username</label>
+      <input id="username" placeholder="Enter your name" maxlength="20">
+    </div>
+    <div class="row">
+      <label>Room</label>
+      <select id="room"></select>
+    </div>
+    <button id="join">Join</button>
+  </div>
+
+  <div id="chat-view" class="hidden">
+    <header class="chat-header">
+      <div>
+        <h2 id="room-title"></h2>
+        <div id="typing" class="typing muted"></div>
+      </div>
+      <div class="presence">
+        <strong>Online:</strong>
+        <span id="online"></span>
+      </div>
+    </header>
+
+    <main id="messages"></main>
+
+    <footer class="composer">
+      <input id="text" placeholder="Type a message...">
+      <button id="send">Send</button>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
